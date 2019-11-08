@@ -22,7 +22,7 @@ RUN apt install -y apache2 libapache2-mod-php7.2 && a2enmod php7.2 && a2enmod re
 
 # Install PHP 7.2+ and modules
 RUN apt install -y software-properties-common
-RUN apt install -y php7.2 php7.2-fpm php7.2-common php7.2-mysql php7.2-curl php7.2-cli php7.2-gd php7.2-mbstring php7.2-xml php7.2-soap
+RUN apt install -y php7.2 php7.2-fpm php7.2-common php7.2-mysql php7.2-curl php7.2-cli php7.2-gd php7.2-mbstring php7.2-xml php7.2-soap php7.2-intl
 
 # Add user and associated to www-data group
 RUN adduser juicyapp
